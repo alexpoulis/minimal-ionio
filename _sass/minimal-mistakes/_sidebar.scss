@@ -84,6 +84,7 @@
     z-index: 10;
 
     &.sticky {
+      //delete these lines if it doesnt work
       overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding

@@ -130,20 +130,26 @@
     &:hover {
       opacity: 1;
     }
-    &.sticky {      
+    /*&.sticky {      
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
       top: 2em;
       float: right;
-    }
-    //&.sticky {
-    //  overflow-y: auto;
+    }*/
+    &.sticky {
+      @include clearfix();
+      overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-    //  height: calc(100vh - #{$nav-height} - 2em);
-    //}
+      height: calc(100vh - #{$nav-height} - 2em);
+    
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2em;
+      float: right;
+    }
   }
 
   @include breakpoint($x-large) {
